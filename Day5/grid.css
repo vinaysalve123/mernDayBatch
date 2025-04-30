@@ -1,0 +1,25 @@
+body{
+    background-color: aqua;
+    color: white;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.grid{
+    background-color: darkblue;
+    text-align: center;
+    padding: 20px;
+    border: 5px solid whitesmoke;
+}
+
+#two{
+    grid-row: span 3;
+    grid-column: span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

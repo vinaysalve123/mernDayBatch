@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle</title>
+
+    <style>
+        body{
+            background: aqua;
+            text-align: center;
+        }
+        #container{
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #a{
+            background-color: red;
+            height: 200px;
+            width: 200px;
+            margin: 0 auto;            
+            border-radius: 50%;
+        }
+
+        button{
+            /* margin-top: 50px; */
+            font-size: 20px;
+            padding: 7px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="a"></div>
+    </div>
+    <button onclick="color()">Colors</button>
+
+
+    <script src="circle.js"></script>
+</body>
+</html>

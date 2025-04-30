@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    background-color: yellow;
+}
+
+span{
+    background-color: chartreuse;
+}

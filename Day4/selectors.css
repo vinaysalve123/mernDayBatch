@@ -1,0 +1,43 @@
+*{
+    background-color: aqua;
+    color: brown;
+}
+
+/* "~" Used to select all the elements after the first element */
+div ~p{
+    background-color: red;
+    color: black;
+}
+
+p{
+    background-color: blueviolet;
+}
+
+#para-2{
+    background-color: white;
+    width: 300px;
+}
+
+input[type="text"]{
+    width: 300px;
+    background-color: lawngreen;
+    font-size: 20px;
+}
+
+h1, h2{
+    background-color: black;
+    color: yellow;
+}
+
+h1::first-letter, h2::first-letter{
+    font-size: 100px;
+}
+
+h1::before{
+    /* content: "Something added before h1: ("; */
+
+    content: "🔥🔥";
+}
+h1::after{
+    content: " ) 👌👌";
+}

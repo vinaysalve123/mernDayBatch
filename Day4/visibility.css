@@ -1,0 +1,19 @@
+*{
+    background-color: beige;
+    color: blue;
+}
+
+p{
+    opacity: .59999999;
+}
+
+/* p{
+    visibility: hidden;
+} */
+/* p{
+    display: inline-block;
+} */
+
+p{
+    display: none;
+}

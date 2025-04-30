@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+            text-align: center;
+        }
+
+        #smile, #sad{
+            margin: 0;
+            font-size: 400px;
+        }
+
+        button{
+            margin-top: 0;
+            width: 100px;
+            /* height: 50px; */
+            padding: 10px;
+            font-size: 15px;
+
+            border-radius: 20px;
+        }
+        button:hover{
+            background-color: rgb(174, 167, 167);
+            color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>How is the Mood</h1>
+
+    <h1 id="smile">😀</h1>
+    <h1 id="sad" style="display: none;">😞</h1>
+
+    <button>Happy</button>
+    <button>Sad</button>
+
+
+    <script>
+        smile = document.getElementById("smile");
+        sad = document.getElementById("sad");
+
+        sadbtn = document.querySelectorAll("button")[1];
+        smilebtn = document.querySelectorAll("button")[0];
+
+        sadbtn.addEventListener("click", ()=>{
+            smile.style.display = "none";
+            sad.style.display = "block";
+        })
+        smilebtn.addEventListener("click", ()=>{
+            sad.style.display = "none";
+            smile.style.display = "block";
+        })
+
+    </script>
+</body>
+</html>

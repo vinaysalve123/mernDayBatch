@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facebook Login</title>
+
+    <style>
+        body{
+           background-color: aliceblue; 
+           font-family: inherit;
+        }
+        .container{
+            /* margin: 10% 40%; */
+            height: 220px;
+            width: 260px;
+            border: 1px solid gray;
+            text-align: center;
+            box-sizing: border-box;
+            margin-top: 12%;
+            
+        }
+        input{
+            /* border-radius: 3%; */
+            height: 20px;
+            padding: 5px;
+        }
+        .inp{
+            margin: 10px 0;
+            /* margin: 10px 20px; */
+            /* width: 396px; */
+            /* height: 456px; */
+            /* width: 396px; */
+            
+        }
+        #login{
+            background-color: #0866ff;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            width: 242px;
+            height: 30px;
+            font-weight: bolder;
+            margin-bottom: 5px;
+        }
+        #login:hover{
+            background-color: #1877f2;
+        }
+
+        #forgotten{
+            text-decoration: none;
+            font-size: 12px;
+            color:  #0866ff;;
+        }
+        #forgotten:hover{
+            text-decoration: underline;
+        }
+        #line{
+            margin: 0 5%;
+        }
+        #new-password{
+            /* font-family: inherit; */
+            background-color: #42b72a;
+            color: white;          
+            width: 150px;
+            height: 30px;
+            font-weight: bolder;
+            border: none;
+            border-radius: 5px;
+        }
+        #new-password:hover{
+            background-color: #36a420;
+        }
+        p{
+            font-size: 12px;
+        }
+        #celeb{
+            color: black;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+        #celeb:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="container">
+            <form action="">
+                <div class="inp">
+                    <input type="text" placeholder="Email address or phone number" size="30">
+                </div>
+                <div class="inp">
+                    <input type="password" placeholder="Password" size="30">
+                </div>
+    
+                <div>
+                    <button type="submit" id="login">Log in</button>
+                </div>
+    
+                <div>
+                    <a href="#" id="forgotten">Forgotten password?</a>
+                </div>
+                
+                <div id="line">
+                    <hr>
+                </div>
+    
+                <button id="new-password">Create new account</button>
+            </form>
+            
+            <br><br>
+
+            <div>
+                <p><a href="#" id="celeb">Create a Page</a>  for a celebrity, brand or business.</p>
+            </div>
+        </div>
+    </center>
+</body>
+</html>

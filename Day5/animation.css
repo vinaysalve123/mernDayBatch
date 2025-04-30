@@ -1,0 +1,38 @@
+body{
+    background-color: aqua;
+    /* display: flex; */
+    /* align-items: center; */
+    /* align-content: center;
+    justify-content: center; */
+    /* height: 100vh; */
+}
+
+.box{
+    background-color: black;
+    width: 200px;
+
+    height: 200px;
+    
+    margin: 300px auto;
+    animation-duration: 5s;
+    animation-name: gfg;
+    animation-iteration-count: infinite;
+
+    
+}
+
+/* .box:hover{
+    background-color: brown;
+    border-radius: 50%;
+} */
+
+@keyframes gfg{
+    50%{
+        transform: scale(1.5) rotate(180deg);
+        background-color: brown;
+    }
+    100%{
+        transform: scale(1) rotate(360deg);
+        background-color: yellow;
+    }
+}

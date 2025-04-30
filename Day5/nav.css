@@ -1,0 +1,17 @@
+*{
+    background-color: aqua;
+}
+
+
+h1{
+    text-align: center;
+    color: blueviolet;
+    background-color: green;
+}
+
+ul{
+    background-color: magenta;
+}
+/* #container{
+    background-color: magenta;
+} */

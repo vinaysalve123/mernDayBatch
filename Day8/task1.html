@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+
+    <style>
+        h3{
+            background: aqua;
+            color: red;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1 id="head1">I am a heading</h1>
+    <button >Click Me</button>
+
+
+    <h2>My task in JS</h2>
+    <button>red</button>
+
+    <script>
+        // x = document.getElementById("head1");
+
+        // function  change(){
+        //     x.textContent = "Learning ES6 Syntax ";
+        // }
+
+
+        let x = document.querySelector("h1");
+        let btn = document.querySelector("button");
+
+        btn.addEventListener("click", ()=>{
+            console.log("You clicked the button !!");
+            x.innerText = "Demo of ES6 Syntax / You clicked the button !!";
+        })
+
+
+
+        let q = document.querySelector("h2");
+        console.log(q);
+
+        let b = document.querySelectorAll("button")[1];
+        console.log(b);
+
+        b.addEventListener("click", ()=>{
+            q.style.background = "red";
+            q.style.color = "white";
+
+            q.style.textAlign = "center";
+        })
+
+        // function add(a, b){
+        //     return(a+b);
+        // }
+        // console.log(add(5,9));
+
+        // const add1 = (a, b)=>{
+        //     return(a+b);
+        // }
+        // console.log(add1(9,7));
+
+    </script>
+</body>
+</html>

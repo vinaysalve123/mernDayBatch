@@ -1,0 +1,17 @@
+li{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown{
+    position: absolute;
+    display: none;
+}
+
+li:hover > ul.dropdown{
+    display: block;
+}
+
+/* a{
+    color: black;
+} */

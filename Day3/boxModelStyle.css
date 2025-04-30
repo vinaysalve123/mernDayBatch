@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: darkturquoise;
+}
+h1{
+    background-color: darkviolet;
+    color: aliceblue;
+    margin: 50px;
+    padding: 30px;
+    border: 10px double yellow;
+    border-radius: 250px;
+    text-align: center;
+}
+
+p{
+    background-color: crimson;
+    color: white;
+    text-align: center;
+    padding-left: 30px;
+    height: 80px;
+    font-size: 45px;
+    cursor: pointer;
+    transition: 5s;
+}
+
+p:hover{
+    font-size: 60px;
+    background-color: yellow;
+    color: black;
+    margin: 0 100px;
+    border-radius: 50px;
+}

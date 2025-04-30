@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headline</title>
+</head>
+<body>
+    <h1>The News is:  <span id="sp"></span></h1>
+
+    <input type="text" placeholder="Write the Headline" name="inp">
+
+
+    <script>
+        inp = document.querySelectorAll("input")[0];
+        // console.log(inp);
+
+        sp = document.querySelectorAll("span")[0];
+        console.log(sp);
+
+
+        //Keyword = "input"  ,  It works in real-time
+        inp.addEventListener("input", (e)=>{
+            sp.textContent = inp.value;
+        })
+
+        //Keyword = "change"  , It works after clicking "Enter Button"
+        inp.addEventListener("change", (e)=>{
+            sp.textContent = inp.value;
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+body{
+    background-color: violet;
+}
+
+h1{
+    color: blue;
+    background-color: yellow;
+}
+
+h2{
+    color: chartreuse;
+    font: bolder;
+    font-size: 30px;
+}

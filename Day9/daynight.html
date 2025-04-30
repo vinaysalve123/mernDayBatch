@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day & Night</title>
+
+    <style>
+        body{
+            background-color: beige;
+            text-align: center;
+            /* transition: 3s; */
+        }
+        h1{
+            margin-top: 100px;
+            color: blue;
+        }
+        button{
+            background-color: cornflowerblue;
+            color: black;
+            padding: 4px;
+            border-radius: 15px;
+            transition: 3s;
+        }
+
+        .night{
+            background: black;
+            color: yellow;
+            
+            
+        }
+
+        .night button{
+            background: white;
+            color: black;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>I am a demo of Day n Night switch case</h1>
+    <button>Click Me</button>
+
+
+    <script>
+        b = document.querySelector("body");
+        btn = document.querySelectorAll("button")[0];
+        // console.log(btn);
+
+        btn.addEventListener("click", ()=>{
+            // alert("Hi");
+            // b.style.background = "black";
+            b.classList.toggle("night");
+            b.style.transition = "3s";
+
+        })
+    </script>
+</body>
+</html>

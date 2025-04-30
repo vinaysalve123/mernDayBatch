@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1 id="head" style="color: blue;">Now I know JS</h1>
+        <button onclick="abs()">Click Me</button>
+
+        <br><br>
+
+        <p id="para">Hide this text when you click the button</p>
+        <button onclick="hide()"> Hide</button>
+    </center>
+
+    <script>
+        
+        y = document.getElementById("head");
+        function abs(){
+            if(y.style.color === "blue"){
+                y.style.color = "yellow";
+                y.style.backgroundColor = "black";
+                y.textContent = "Javascript is interesting";
+            }
+            else{
+                y.style.color = "blue";
+                y.style.backgroundColor = "bisque";
+                y.textContent = "Now I know JS";
+            }
+        }
+
+
+        // b = true;
+        z = document.getElementById("para");
+        function hide(){
+            // z.style.opacity = "0";
+            // z.style.visibility = "hidden";
+            // z.style.display = "none";
+
+            // if(b){
+            //     z.style.opacity = "0";
+
+            //     b = false;
+            // }
+            // else{
+            //     z.style.opacity = "1";
+            //     b = true;
+            // }
+            
+
+
+
+
+            // if(z.style.visibility === "visible"){
+            //     z.style.visibility = "hidden";
+            // }
+            // else{
+            //     z.style.visibility = "visible";
+            // }
+            if(z.style.opacity === "0"){
+                z.style.opacity = "1";
+            }
+            else{
+                z.style.opacity = "0";
+            }
+        }
+    </script>
+</body>
+</html>
