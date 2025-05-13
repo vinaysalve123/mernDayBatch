@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetching fruits</title>
+</head>
+<body>
+    <h1>My favourite fruit is : </h1>
+    <h2>All tastes : </h2>
+
+
+    <script>
+        fetch("https://sweetfruit.vercel.app/fruits")
+        .then(data=>data.json())
+        .then(res=>{
+            console.log(res);
+
+            // document.querySelector("h1").textContent += res[5].name +", " + res[6].name;
+            document.querySelector("h1").textContent += `${res[5].name}, ${res[6].name}`;
+            document.querySelector("h2").textContent += res[5].taste;
+        })
+    </script>
+</body>
+</html>

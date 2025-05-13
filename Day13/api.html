@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Fetching</title>
+</head>
+<body>
+    <h1>Learning Fetching and API</h1>
+
+    <h1>Current name is : </h1>
+    <h1>Username is : </h1>
+    <h1>Email is : </h1>
+
+    <script>
+        fetch("https://jsonplaceholder.typicode.com/users")
+        .then(data=>data.json())
+        .then(res=>{
+            document.querySelectorAll("h1")[1].textContent += res[2].name;
+            document.querySelectorAll("h1")[2].textContent += res[2].username;
+            document.querySelectorAll("h1")[3].textContent += res[2].email;
+            console.log(res);
+        });
+    </script>
+</body>
+</html>

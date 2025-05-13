@@ -1,0 +1,48 @@
+body{
+    background-color: bisque;
+    text-align: center;
+    color: darkblue;
+}
+
+#traffic{
+    width: 80px;
+    height: 200px;
+    background-color: black;
+    margin: 150px auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.light{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: gainsboro;
+    border-radius: 50%;
+}
+
+.timer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    /* text-align: center; */
+    text-shadow: 1px 1px 1px white;
+}
+
+.red.active{
+    background-color: red;
+}
+.orange.active{
+    background-color: orange;
+}
+.green.active{
+    background-color: green;
+}
